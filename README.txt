@@ -1,7 +1,7 @@
 # Calculator-in-C
 A useful scientific calculator written in C code. Allows you to make basic, trigonometric, and vector operations.
 
-------------------------------------------------------------------------------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------------------------
 
 Hi, I am Calculator ( ͡° ͜ʖ ͡°), and like most of my kind, I solve math and physics related problems. I know for a fact that you are here to learn my inner workings, so I welcome you...
 
