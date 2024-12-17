@@ -10,7 +10,7 @@ pipeline {
         }
         stage('Test'){
             steps{
-            sh 'printf("YYEEESSS")'
+            sh 'gcc -o executeit main.c'
             }
         }
     }
