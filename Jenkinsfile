@@ -9,7 +9,9 @@ pipeline {
             }
         }
         stage('Test'){
+            steps{
             sh 'printf("YYEEESSS")'
+            }
         }
     }
 }
