@@ -8,5 +8,8 @@ pipeline {
                 sh 'gcc --version'
             }
         }
+        stage('Test'){
+            sh 'printf("YYEEESSS")'
+        }
     }
 }
