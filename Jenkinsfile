@@ -10,7 +10,7 @@ pipeline {
         }
         stage('Test'){
             steps{
-            sh 'gcc -o executeit main.c'
+            sh 'gcc -o executeit /Calculator/main.c'
             }
         }
     }
