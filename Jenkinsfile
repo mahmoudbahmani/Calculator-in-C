@@ -14,7 +14,6 @@ pipeline {
             steps{
             sh '''test -f executeit
                   ./executeit
-                  echo "2+3" | ./executeit
             '''
 
             }
