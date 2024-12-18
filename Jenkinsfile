@@ -20,6 +20,11 @@ pipeline {
             }
         }
     }
+    post {
+        always{
+            junit 'Test-result/Junit.xml'
+        }
+    }
 }
 /*
 pipeline {
