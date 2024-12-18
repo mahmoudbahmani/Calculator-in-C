@@ -7,11 +7,12 @@ pipeline {
             steps {
                 echo 'started'
                 sh 'gcc --version'
+                sh 'gcc -o executeit main.c'
             }
         }
         stage('Test'){
             steps{
-            sh 'gcc -o executeit main.c'
+            sh 'test -f executeit'
             }
         }
     }
