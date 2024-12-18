@@ -12,7 +12,7 @@ pipeline {
         }
         stage('Test'){
             steps{
-            sh 'test -f executeit'
+            sh 'test -f executeitt'
             }
         }
     }
