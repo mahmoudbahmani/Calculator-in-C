@@ -15,7 +15,12 @@ pipeline {
             sh '''test -f executeit
                   echo 'small change'
             '''
-
+            }
+        }
+        stage('deploy'){
+            steps{
+                timeout(0) {// wait just for 1 minutes}
+                input 'Do you approve?'
             }
         }
     }
