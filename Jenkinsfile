@@ -13,6 +13,7 @@ pipeline {
         stage('Test'){
             steps{
             sh '''test -f executeit
+                  echo 'small change'
             '''
 
             }
