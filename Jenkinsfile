@@ -16,7 +16,7 @@ pipeline {
                   echo 'small change'
             '''
             script{
-                env.MY_var='here is in test stage!' 
+                env.MY_var='////// here is in test stage! \\\\\\' 
             }
             }
         }
@@ -24,7 +24,7 @@ pipeline {
             steps{
                 timeout(time:1 , unit: 'MINUTES') {
                     input message:'Do you approve?',ok:'ّ I confirm'
-                    echo "MY_var is:$env.MY_var"
+                    echo "MY_var is:${env.MY_var}"
                 }
                 
             }
