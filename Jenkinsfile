@@ -15,12 +15,16 @@ pipeline {
             sh '''test -f executeit
                   echo 'small change'
             '''
+            script{
+                env.MY_var='here is in test stage!' 
+            }
             }
         }
         stage('deploy'){
             steps{
                 timeout(time:1 , unit: 'MINUTES') {
                     input message:'Do you approve?',ok:'ّ I confirm'
+                    echo "MY_var is:$env.MY_var"
                 }
                 
             }
