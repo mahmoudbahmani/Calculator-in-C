@@ -20,7 +20,7 @@ pipeline {
         stage('deploy'){
             steps{
                 timeout(0) {// wait just for 1 minutes}
-                input 'Do you approve?'
+                input message'Do you approve?',ok:'ّ I confirm'
             }
         }
     }
